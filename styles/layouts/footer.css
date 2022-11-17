@@ -1,0 +1,25 @@
+.footer {
+  padding: 20px 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #181818;
+}
+
+.footer__copyright {
+  font-size: 16px;
+  color: rgba(24, 24, 24, 0.4);
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+}
+
+.footer__link {
+  font-size: 16px;
+}
+
+.footer__link:not(:last-child) {
+  margin-right: 40px;
+}
