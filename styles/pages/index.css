@@ -131,6 +131,7 @@
   flex-basis: calc((100% / 4) - 40px);
   max-width: calc((100% / 4) - 40px);
   width: 100%;
+  cursor: pointer;
 }
 
 .news__box:not(:last-child) {

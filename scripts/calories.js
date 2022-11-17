@@ -1,5 +1,5 @@
 import dataBase from "../db/caloriesData.js";
-const tableBody = document.getElementById("calories__table__body");
+const tableBody = document.getElementById("calories-table-body");
 
 const drawTable = () => {
   const { data } = dataBase;
