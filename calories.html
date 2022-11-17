@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/layouts/header.css" />
     <link rel="stylesheet" href="./styles/layouts/footer.css" />
+    <link rel="stylesheet" href="./styles/pages/calories.css" />
     <title>1hls</title>
   </head>
   <body>
@@ -59,6 +60,20 @@
         </ul>
       </nav>
     </header>
+    <main class="container calories">
+      <h1 class="calories__title">Daily ration</h1>
+      <div class="calories__table__wrapper">
+        <table class="calories__table">
+          <thead class="calories__table__head">
+            <tr class="calories__table__head--tr">
+              <th class="calories__table__head--th">Diet and exemplary diet</th>
+              <th class="calories__table__head--th">Ready servings / grams</th>
+            </tr>
+          </thead>
+          <tbody id="calories__table__body" class="calories__table__body" />
+        </table>
+      </div>
+    </main>
     <footer class="container footer">
       <div class="footer__copyright">© 2022 - 1hls</div>
       <div class="footer__links">
@@ -69,5 +84,6 @@
         <a class="footer__link" href="/contacts.html">Cotacts</a>
       </div>
     </footer>
+    <script type="module" src="./scripts/calories.js"></script>
   </body>
 </html>

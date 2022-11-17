@@ -1,0 +1,61 @@
+.calories {
+  padding: 80px 240px 100px;
+  min-height: calc(100vh - 108px - 62px);
+  color: #181818;
+  text-align: center;
+}
+
+.calories__table__wrapper {
+  width: 100%;
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.calories__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+
+.calories__table {
+  margin: 0 auto;
+  border-collapse: separate;
+  border: 1px solid rgba(24, 24, 24, 0.1);
+  border-radius: 20px;
+  border-spacing: 0;
+  text-align: left;
+}
+
+.calories__table__head--th {
+  font-weight: 500;
+  font-size: 20px;
+  border-bottom: 1px solid rgba(24, 24, 24, 0.1);
+}
+
+.calories__table__head--th:not(:last-child) {
+  border-right: 1px solid rgba(24, 24, 24, 0.1);
+}
+
+.calories__table__body--td {
+  font-size: 16px;
+}
+
+.calories__table__body--tr:not(:last-child) .calories__table__body--td {
+  border-bottom: 1px solid rgba(24, 24, 24, 0.1);
+}
+
+.calories__table__body--tr .calories__table__body--td:not(:last-child) {
+  border-right: 1px solid rgba(24, 24, 24, 0.1);
+}
+
+.calories__table__body--td.full {
+  font-weight: 600;
+  font-size: 16px;
+  color: #2063f0;
+}
+
+.calories__table__body--td,
+.calories__table__head--th {
+  padding: 20px 24px;
+}
