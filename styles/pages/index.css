@@ -1,5 +1,10 @@
+.main {
+  min-height: calc(100vh - 108px - 62px);
+  padding: 0 240px;
+}
+
 .cta {
-  padding: 78px 240px 160px;
+  padding: 78px 0 160px;
 }
 
 .cta__header {
@@ -110,7 +115,7 @@
 }
 
 .news {
-  padding: 0 240px 140px;
+  padding: 0 0 140px;
   color: #181818;
 }
 
@@ -160,7 +165,7 @@
 }
 
 .info {
-  padding: 0 240px 70px;
+  padding: 0 0 70px;
   text-align: center;
   color: #181818;
 }

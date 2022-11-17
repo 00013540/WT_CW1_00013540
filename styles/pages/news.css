@@ -1,6 +1,7 @@
 .news {
   padding: 80px 240px 120px;
   color: #181818;
+  min-height: calc(100vh - 108px - 62px);
 }
 
 .news__header {

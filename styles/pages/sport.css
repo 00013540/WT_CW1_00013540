@@ -1,0 +1,43 @@
+.sport {
+  padding: 60px 240px 70px;
+  color: #181818;
+  min-height: calc(100vh - 108px - 62px);
+}
+
+.sport__wrapper {
+  max-width: 1070px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sport__title {
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: -0.04em;
+  margin-bottom: 40px;
+}
+
+.sport__description {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: -0.04em;
+  margin-bottom: 40px;
+}
+
+.sport__content {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.sport__image__box {
+  height: 600px;
+  margin: 0 auto 40px;
+}
+
+.sport__image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
