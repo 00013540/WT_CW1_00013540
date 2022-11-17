@@ -16,31 +16,32 @@
     ></script>
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/layouts/header.css" />
+    <link rel="stylesheet" href="./styles/pages/index.css" />
     <title>1hls</title>
   </head>
   <body>
     <header class="container header">
       <nav class="nav">
-        <a class="nav__logo" href="/">
+        <a class="nav__logo" href="/index.html">
           <img src="./assets/images/logo.png" alt="logo" />
         </a>
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="/calories.html">
               <i class="fa-solid fa-fire-flame-curved nav__icon"></i>
-              <span class="nav__text">Калории</span></a
+              <span class="nav__text">Calories</span></a
             >
           </li>
           <li class="nav__item">
             <a class="nav__link" href="/news.html">
               <i class="fa-solid fa-person-running nav__icon"></i>
-              <span class="nav__text">Новости</span>
+              <span class="nav__text">News</span>
             </a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="/sport.html">
               <i class="fa-solid fa-newspaper nav__icon"></i>
-              <span class="nav__text">Спорт</span>
+              <span class="nav__text">Sport</span>
             </a>
           </li>
           <li class="nav__item">
@@ -52,15 +53,82 @@
           <li class="nav__item">
             <a class="nav__link" href="/contacts.html">
               <i class="fa-solid fa-address-card nav__icon"></i>
-              <span class="nav__text">Контакты</span>
+              <span class="nav__text">Contacts</span>
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <div>
-      <i class="fa-brands fa-apple"></i>
-      <i class="fa-solid fa-play"></i>
-    </div>
+    <section class="container cta">
+      <div class="cta__header">
+        <h1 class="cta__title">
+          This website was created to fulfill Web Technology module’s
+          requirements and does not represent an actual company or service
+        </h1>
+        <p class="cta__description">Now your health can bring you income</p>
+      </div>
+      <div class="cta__main">
+        <div class="cta__main--top">
+          <a class="cta__main__link" href="/index.html">
+            <i class="fa-brands fa-apple cta__main__icon"></i>
+            <span class="cta__main__text">App Store</span>
+          </a>
+          <a class="cta__main__link" href="/index.html">
+            <i class="fa-solid fa-play cta__main__icon"></i>
+            <span class="cta__main__text">Google Play</span>
+          </a>
+        </div>
+        <p class="cta__main__description">
+          Download the app, put your phone in your pocket - and start earning
+          money!
+        </p>
+      </div>
+      <div class="cta__footer">
+        <img
+          class="cta__footer__image"
+          src="./assets/images/phones.png"
+          alt="phones"
+        />
+        <div class="cta__footer__icons">
+          <ul class="cta__footer__list">
+            <li class="cta__footer__item">
+              <img
+                class="cta__footer__icon"
+                src="./assets/icons/distance.svg"
+                alt="icon"
+              />
+            </li>
+            <li class="cta__footer__item">
+              <img
+                class="cta__footer__icon"
+                src="./assets/icons/flame.svg"
+                alt="icon"
+              />
+            </li>
+            <li class="cta__footer__item">
+              <img
+                class="cta__footer__icon"
+                src="./assets/icons/stairs.svg"
+                alt="icon"
+              />
+            </li>
+            <li class="cta__footer__item">
+              <img
+                class="cta__footer__icon"
+                src="./assets/icons/compas.svg"
+                alt="icon"
+              />
+            </li>
+            <li class="cta__footer__item">
+              <img
+                class="cta__footer__icon"
+                src="./assets/icons/footprints.svg"
+                alt="icon"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

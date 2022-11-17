@@ -18,5 +18,6 @@ a:visited,
 a:link,
 a:active,
 a:hover {
+  text-decoration: none;
   color: inherit;
 }

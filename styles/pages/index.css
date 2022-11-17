@@ -1,0 +1,110 @@
+.cta {
+  padding: 78px 240px 160px;
+}
+
+.cta__header {
+  text-align: center;
+  color: #181818;
+  margin-bottom: 70px;
+}
+
+.cta__title {
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: -0.04em;
+  margin-bottom: 10px;
+}
+
+.cta__description {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.cta__main {
+  color: rgba(24, 24, 24, 0.4);
+  text-align: center;
+  margin-bottom: 140px;
+}
+
+.cta__main--top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.cta__main__link {
+  background: #181818;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta__main__link:first-child {
+  margin-right: 20px;
+}
+
+.cta__main__icon {
+  font-size: 35px;
+  margin-right: 15px;
+}
+
+.cta__main__text {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.cta__main__description {
+  font-size: 16px;
+}
+
+.cta__footer {
+  height: 600px;
+  background-image: url("../../assets/images/phones-background.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.cta__footer__image {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cta__footer__icons {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cta__footer__list {
+  display: flex;
+  align-items: center;
+}
+
+.cta__footer__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  border: 1px solid rgba(24, 24, 24, 0.1);
+  background-color: #fff;
+}
+
+.cta__footer__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.cta__footer__icon {
+  height: 30px;
+  width: 30px;
+}
