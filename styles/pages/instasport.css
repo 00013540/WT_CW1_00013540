@@ -1,0 +1,114 @@
+.instasport {
+  padding: 80px 240px 100px;
+  color: #181818;
+  min-height: calc(100vh - 108px - 62px);
+}
+
+.instasport__title {
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.instasport__top {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-bottom: 50px;
+}
+
+.instasport__top__box {
+  flex-basis: calc(100% / 3 - 35px);
+  max-width: calc(100% / 3 - 35px);
+  width: 100%;
+  border-radius: 10px;
+}
+
+.instasport__top__box:hover .instasport__top__iframe {
+  transform: scale(1.1);
+}
+
+.instasport__bottom__box:hover .instasport__bottom__iframe {
+  transform: scale(1.1);
+}
+
+.instasport__top__box:not(:last-child) {
+  margin-right: 35px;
+}
+
+.instasport__top__video,
+.instasport__bottom__video {
+  margin-bottom: 10px;
+}
+
+.instasport__top__iframe,
+.instasport__bottom__iframe {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.instasport__top__title,
+.instasport__bottom__title {
+  font-size: 20px;
+  color: rgba(24, 24, 24, 0.8);
+  margin-bottom: 5px;
+}
+
+.instasport__top__content,
+.instasport__bottom__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.instasport__top__views,
+.instasport__bottom__views {
+  font-size: 16px;
+  color: rgba(24, 24, 24, 0.4);
+}
+
+.instasport__top__likes,
+.instasport__bottom__likes {
+  display: flex;
+  align-items: center;
+  color: rgba(24, 24, 24, 0.4);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.instasport__top__likes:hover {
+  color: #2063f0;
+}
+
+.instasport__bottom__likes:hover {
+  color: #2063f0;
+}
+
+.instasport__top__icon,
+.instasport__bottom__icon {
+  font-size: 25px;
+  margin-right: 6px;
+}
+
+.instasport__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.instasport__bottom__box {
+  flex-basis: calc(100% / 4 - 40px);
+  max-width: calc(100% / 4 - 40px);
+  width: 100%;
+  border-radius: 10px;
+  margin-right: 40px;
+  margin-bottom: 45px;
+}
+
+.instasport__bottom__box:nth-child(4n) {
+  margin-right: 0;
+}
