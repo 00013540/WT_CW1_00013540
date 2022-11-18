@@ -18,6 +18,11 @@
 
 .footer__link {
   font-size: 16px;
+  transition: all 0.2s;
+}
+
+.footer__link:hover {
+  color: #2063f0;
 }
 
 .footer__link:not(:last-child) {

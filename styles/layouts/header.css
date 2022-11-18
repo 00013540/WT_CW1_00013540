@@ -37,10 +37,14 @@
   transition: all 0.2s;
 }
 
+.nav__text {
+  color: #181818;
+}
+
 .nav__item:hover .nav__icon {
   color: #2063f0;
 }
 
-.nav__text {
-  color: #181818;
+.nav__item:hover .nav__text {
+  color: #2063f0;
 }
