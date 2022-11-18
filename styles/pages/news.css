@@ -26,6 +26,7 @@
   align-items: stretch;
   flex-wrap: wrap;
   margin-bottom: 100px;
+  justify-content: space-between;
 }
 
 .news__relevant__box {
@@ -37,10 +38,6 @@
 
 .news__relevant__box:hover .news__relevant__img {
   transform: scale(1.1);
-}
-
-.news__relevant__box:not(:last-child) {
-  margin-right: 35px;
 }
 
 .news__relevant__top {
@@ -60,12 +57,6 @@
   font-size: 20px;
   line-height: 27px;
   color: rgba(24, 24, 24, 0.8);
-}
-
-.news__all {
-}
-
-.news__row {
 }
 
 .news__row:not(:last-child) {
@@ -91,6 +82,8 @@
 .news__container {
   display: flex;
   align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .news__box {
@@ -102,10 +95,6 @@
 
 .news__box:hover .news__img {
   transform: scale(1.1);
-}
-
-.news__box:not(:last-child) {
-  margin-right: 40px;
 }
 
 .news__top {
@@ -121,6 +110,75 @@
   transition: all 0.2s;
 }
 
-.news__description {
-  font-size: 20px;
+@media screen and (max-width: 1400px) {
+  .news {
+    padding: 40px 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .news {
+    padding: 40px 50px;
+  }
+
+  .news__title {
+    font-size: 40px;
+  }
+
+  .news__description {
+    font-size: 20px;
+  }
+
+  .news__box {
+    flex-basis: calc(100% / 3 - 20px);
+    max-width: calc(100% / 3 - 20px);
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .news__box {
+    flex-basis: calc(100% / 2 - 10px);
+    max-width: calc(100% / 2 - 10px);
+  }
+
+  .news__relevant__box {
+    flex-basis: calc(100% / 2 - 10px);
+    max-width: calc(100% / 2 - 10px);
+    margin-bottom: 20px;
+  }
+
+  .news__all__title {
+    font-size: 30px;
+  }
+
+  .news__all__description {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .news__title {
+    font-size: 35px;
+  }
+
+  .news__description {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .news {
+    padding: 40px 20px;
+  }
+
+  .news__relevant__box {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .news__box {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
 }
