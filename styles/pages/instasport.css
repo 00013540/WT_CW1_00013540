@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   align-items: stretch;
   margin-bottom: 50px;
+  justify-content: space-between;
 }
 
 .instasport__top__box {
@@ -32,10 +33,6 @@
 
 .instasport__bottom__box:hover .instasport__bottom__iframe {
   transform: scale(1.1);
-}
-
-.instasport__top__box:not(:last-child) {
-  margin-right: 35px;
 }
 
 .instasport__top__video,
@@ -98,6 +95,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+  justify-content: space-between;
 }
 
 .instasport__bottom__box {
@@ -105,10 +103,81 @@
   max-width: calc(100% / 4 - 40px);
   width: 100%;
   border-radius: 10px;
-  margin-right: 40px;
   margin-bottom: 45px;
 }
 
-.instasport__bottom__box:nth-child(4n) {
-  margin-right: 0;
+@media screen and (max-width: 1400px) {
+  .instasport {
+    padding: 40px 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .instasport__bottom__box {
+    flex-basis: calc(100% / 3 - 30px);
+    max-width: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .instasport {
+    padding: 40px 50px;
+  }
+
+  .instasport__top__box {
+    flex-basis: calc(100% / 2 - 20px);
+    max-width: calc(100% / 2 - 20px);
+    margin-bottom: 20px;
+  }
+
+  .instasport__bottom__box {
+    flex-basis: calc(100% / 2 - 20px);
+    max-width: calc(100% / 2 - 20px);
+  }
+
+  .instasport__title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .instasport__top__box {
+    flex-basis: calc(100% / 2 - 10px);
+    max-width: calc(100% / 2 - 10px);
+  }
+
+  .instasport__top__title,
+  .instasport__bottom__title {
+    font-size: 16px;
+  }
+
+  .instasport__top__views,
+  .instasport__bottom__views {
+    font-size: 14px;
+  }
+
+  .instasport__top__count,
+  .instasport__bottom__count {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .instasport {
+    padding: 40px 20px;
+  }
+
+  .instasport__top__box {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .instasport__bottom__box {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .instasport__title {
+    font-size: 35px;
+  }
 }
