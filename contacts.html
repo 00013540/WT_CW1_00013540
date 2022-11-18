@@ -15,8 +15,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/pages/contacts.css" />
     <link rel="stylesheet" href="./styles/layouts/header.css" />
     <link rel="stylesheet" href="./styles/layouts/footer.css" />
+    <link rel="stylesheet" href="./styles/layouts/popup.css" />
     <title>1hls</title>
   </head>
   <body>
@@ -59,6 +61,51 @@
         </ul>
       </nav>
     </header>
+    <main class="container contacts">
+      <h1 class="contats__title">Connect with us</h1>
+      <form id="form" class="contats__form">
+        <div class="contacts__field">
+          <label class="contacts__label" for="name">Full name</label>
+          <input class="contacts__input" id="name" type="text" />
+          <span class="contacts__error" id="name-error"
+            >This field is required to fill</span
+          >
+        </div>
+        <div class="contacts__field">
+          <label class="contacts__label" for="phone">Phone</label>
+          <input class="contacts__input" id="phone" type="tel" />
+          <span class="contacts__error" id="phone-error"
+            >This field is required to fill</span
+          >
+        </div>
+        <div class="contacts__field">
+          <label class="contacts__label" for="email">E-mail address</label>
+          <input class="contacts__input" id="email" type="email" />
+          <span class="contacts__error" id="email-error"
+            >This field is required to fill</span
+          >
+        </div>
+        <div class="contacts__field">
+          <label class="contacts__label" for="message">Message</label>
+          <textarea
+            class="contacts__textarea"
+            id="message"
+            cols="30"
+            rows="5"
+          ></textarea>
+          <span class="contacts__error" id="message-error"
+            >This field is required to fill</span
+          >
+        </div>
+        <button class="contacts__btn" type="submit">
+          <span id="btn-text">Send</span>
+          <i
+            id="btn-spinner"
+            class="fa-solid fa-spinner contacts__btn__spinner"
+          ></i>
+        </button>
+      </form>
+    </main>
     <footer class="container footer">
       <div class="footer__copyright">© 2022 - 1hls</div>
       <div class="footer__links">
@@ -69,5 +116,15 @@
         <a class="footer__link" href="/contacts.html">Cotacts</a>
       </div>
     </footer>
+    <div id="popup" class="popup">
+      <div id="popup-overlay" class="popup__overlay"></div>
+      <div id="popup-content" class="popup__content">
+        <i id="popup-close" class="fa-solid fa-xmark popup__close-icon"></i>
+        <i class="fa-solid fa-circle-check popup__success-icon"></i>
+        <p class="popup__description">Your message was sent successfully</p>
+        <button id="popup-ok" class="popup__btn">Ok</button>
+      </div>
+    </div>
+    <script type="module" src="./scripts/contacts.js"></script>
   </body>
 </html>
