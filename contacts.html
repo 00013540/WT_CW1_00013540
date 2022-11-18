@@ -24,9 +24,17 @@
   <body>
     <header class="container header">
       <nav class="nav">
-        <a class="nav__logo" href="/index.html">
-          <img src="./assets/images/logo.png" alt="logo" />
-        </a>
+        <div class="nav__container">
+          <a class="nav__logo" href="/index.html">
+            <img src="./assets/images/logo.png" alt="logo" />
+          </a>
+          <div class="nav__hamburger">
+            <label class="nav__hamburger__label" for="checkbox">
+              <i class="fa-sharp fa-solid fa-bars nav__hamburger__icon"></i>
+            </label>
+          </div>
+        </div>
+        <input class="nav__hamburger__checkbox" id="checkbox" type="checkbox" />
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="/calories.html">
@@ -107,13 +115,15 @@
       </form>
     </main>
     <footer class="container footer">
-      <div class="footer__copyright">© 2022 - 1hls</div>
-      <div class="footer__links">
-        <a class="footer__link" href="/calories.html">Calories</a>
-        <a class="footer__link" href="/news.html">News</a>
-        <a class="footer__link" href="/sport.html">Sport</a>
-        <a class="footer__link" href="/instasport.html">InstaSport</a>
-        <a class="footer__link" href="/contacts.html">Cotacts</a>
+      <div class="footer__container">
+        <div class="footer__copyright">© 2022 - 1hls</div>
+        <div class="footer__links">
+          <a class="footer__link" href="/calories.html">Calories</a>
+          <a class="footer__link" href="/news.html">News</a>
+          <a class="footer__link" href="/sport.html">Sport</a>
+          <a class="footer__link" href="/instasport.html">InstaSport</a>
+          <a class="footer__link" href="/contacts.html">Cotacts</a>
+        </div>
       </div>
     </footer>
     <div id="popup" class="popup">
