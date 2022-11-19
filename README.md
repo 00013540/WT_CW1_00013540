@@ -1,4 +1,4 @@
-# CW1 for Web Technologies module
+# CW1 for Web Technology module
 
 ## Purpose of the website:
 
