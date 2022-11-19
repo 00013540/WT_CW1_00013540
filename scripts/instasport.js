@@ -2,8 +2,10 @@ import instasportData from "../db/instasportData.js";
 const instasportTop = document.getElementById("instasport-top");
 const instasportBottom = document.getElementById("instasport-bottom");
 
+// This function is used to draw youtube videos dynamically.
 const drawInstasport = () => {
   const { data } = instasportData;
+  // For the content of the youtube videos, dummy data was used from instasportData.js.
   const contentTop = data.actuals.map(
     (item) =>
       `

@@ -15,6 +15,7 @@ const popupContent = document.getElementById("popup-content");
 const bnText = document.getElementById("btn-text");
 const btnSpinner = document.getElementById("btn-spinner");
 
+// This function is used to validate the inputs of the form. Furthermore, it returns true or false depending on the state of the inputs.
 const validateForm = () => {
   if (!nameEl.value.trim().length) {
     nameError.classList.add("show");
@@ -44,14 +45,17 @@ const validateForm = () => {
   ].every((item) => item);
 };
 
+// This function is used to show popup.
 const showPopup = () => {
   popup.classList.add("show");
 };
 
+// This function is used to hide popup.
 const hidePopup = () => {
   popup.classList.remove("show");
 };
 
+// This function is used to reset the form inputs' values.
 const resetForm = () => {
   nameEl.value = "";
   phoneEl.value = "";
@@ -63,6 +67,7 @@ const resetForm = () => {
   messageError.classList.remove("show");
 };
 
+// Event listener was used to listen to click event.
 popupContent.addEventListener("click", (e) => {
   e.preventDefault();
   e.stopPropagation();
@@ -71,6 +76,7 @@ popupClose.addEventListener("click", hidePopup);
 popupOkay.addEventListener("click", hidePopup);
 popupOverlay.addEventListener("click", hidePopup);
 
+// Event listener was used to listen to submit event of the form.
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const isValid = validateForm();

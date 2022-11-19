@@ -1,8 +1,10 @@
 import newsData from "../db/newsData.js";
 const newsAll = document.getElementById("news-all");
 
+// This function is used to draw news dynamically.
 const drawNews = () => {
   const { data } = newsData;
+  // For the content of news, dummy data was used from newsData.js.
   const content = data.map((item) => {
     const header = `
     <div class="news__all__header">
