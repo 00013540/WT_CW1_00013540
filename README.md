@@ -7,6 +7,18 @@ The main purpose of creating this web application "1hls" is to support the popul
 ## Pages of the website:
 
 This website consists of 6 pages ("Main", "Calories", "News", "Sport", "InstaSport" and "Contacts" page). Each page is responsible for giving different information to visitors of the website.
+<br/>
+In "Main" page, visitors can see news and some information.
+<br/>
+In "Calories" page, visitors can get information about daily rations of food.
+<br/>
+In "News" page, visitors can get latest news.
+<br/>
+In "Sport" page, visitors can get information about pros and cons of sports education.
+<br/>
+In "InstaSport" page, visitors can get watch healty activities.
+<br/>
+In "Contacts" page, visitors can leave messages.
 
 ## Content of the website:
 
